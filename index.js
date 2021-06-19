@@ -17,7 +17,7 @@ const uploadFile = file => {
   const randomStr = Math.random().toString(36).substr(2, 8)
 
   file.name = `${randomStr}.${fileExt}`
-  file.path = __dirname + "/uploads/" + file.name
+  file.path = process.cwd() + "/uploads/" + file.name
 }
 
 module.exports = async (req, res, next) => {
