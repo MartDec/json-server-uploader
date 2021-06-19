@@ -14,5 +14,9 @@
   },
   "dependencies": {
     "formidable": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://lab.frogg.it/mdeclert.dev_gmail.com/json-server-uploader"
   }
 }
