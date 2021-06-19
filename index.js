@@ -4,7 +4,10 @@ const parseData = request => {
   return new Promise((resolve, reject) => {
     const data = {}
     new IncomingForm().parse(request)
-      .on('fileBegin', (name, file) => uploadFile(file))
+      .on('fileBegin', (name, file) => {
+        uploadFile(file)
+        data[name] = file.path.split(`${process.cwd()}/`).pop()
+      })
       .on('field', (name, value) => data[name] = value)
       .on('end', () => resolve(data))
       .on('error', error => reject(error))
