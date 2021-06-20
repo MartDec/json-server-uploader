@@ -1,6 +1,6 @@
 # JSON server uploader middleware
 
-JSON server middleware to upload files
+This middleware parse multipart/form-data content type requests, and upload files on the server when files are detected in requests
 
 ## Usage
 

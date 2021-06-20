@@ -1,6 +1,6 @@
 {
   "name": "json-server-uploader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Middleware to upload files with json-server API",
   "main": "index.js",
   "scripts": {
